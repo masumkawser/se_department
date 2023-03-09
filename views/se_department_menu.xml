@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+    
+        <menuitem
+            id="department_menu_root"
+            name="Department"
+            sequence="10"/>
+            
+            <menuitem
+                id="model_sub_menu"
+                name="Department"
+                parent="department_menu_root"
+                action="action_department_view"
+                sequence="11"/>
+    
+    </data>
+    
+
+</odoo>
