@@ -28,7 +28,8 @@
         'security/ir.model.access.csv',
             # views
         'views/se_departmet_view.xml',
-        'views/se_department_menu.xml'
+        'views/se_parent_view.xml',
+        'views/se_department_menu.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

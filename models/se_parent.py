@@ -1,9 +1,9 @@
 from odoo import models, fields
 
 
-class SeDepartment(models.Model):
-    _name = 'se.department'
-    _description = 'department'
+class SeParentDepartment(models.Model):
+    _name = 'se.parent'
+    _description = 'Parent department'
 
     name = fields.Char(
         string='Department Name',
@@ -18,13 +18,10 @@ class SeDepartment(models.Model):
         string='Department Logo',
 
     )
-
-    parentdepartment_id = fields.Many2one(
-        'se.parent', string='Parent Department')
-    # (
-    #     string='Parent Department',
-    #     required=True
-    # )
+    parentdepartment = fields.Char(
+        string='Parent Department'
+        # required=True
+    )
 
     academicfaculty = fields.Char(
         string='Academic Faculty',

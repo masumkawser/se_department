@@ -14,6 +14,14 @@
                 parent="department_menu_root"
                 action="action_department_view"
                 sequence="11"/>
+
+            <menuitem
+                id="se_parent_department_sub_menu"
+                name="Parent Department"
+                parent="department_menu_root"
+                action="se_parent_view_action"
+                sequence="12"
+                />
     
     </data>
     
